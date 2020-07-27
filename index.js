@@ -43,3 +43,5 @@ export const span = (klass, attributes, contents) =>
   el("span", klass, attributes, contents);
 export const img = (klass, attributes, contents) =>
   el("img", klass, attributes, contents);
+export const a = (klass, attributes, contents) =>
+  el("a", klass, attributes, contents);
