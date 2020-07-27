@@ -9,7 +9,6 @@ npm install --save quickelement
 
 ## Usage
 
-```
 import { el } from 'quickelement';
 
 # Create an element with an img inside it.
