@@ -1,6 +1,6 @@
 {
   "name": "quickelement",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shorthand for creating HTML elements.",
   "main": "index.js",
   "scripts": {
