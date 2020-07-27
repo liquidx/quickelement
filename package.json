@@ -6,6 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liquidx/quickelement"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "Alastair Tse <alastair@liquidx.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/liquidx/quickelement"
 }
