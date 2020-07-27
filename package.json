@@ -1,0 +1,11 @@
+{
+  "name": "quickelement",
+  "version": "1.0.0",
+  "description": "Shorthand for creating HTML elements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alastair Tse <alastair@liquidx.net>",
+  "license": "MIT"
+}
