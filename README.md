@@ -6,9 +6,11 @@ Simple way to create basic HTML elements with no other dependencies.
 
 ```
 npm install --save quickelement
+```
 
 ## Usage
 
+```
 import { el } from 'quickelement';
 
 # Create an element with an img inside it.
