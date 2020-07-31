@@ -1,19 +1,28 @@
 {
   "name": "quickelement",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Shorthand for creating HTML elements.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "BABEL_ENV=production npx babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/liquidx/quickelement"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Alastair Tse <alastair@liquidx.net>",
   "license": "MIT",
-  "homepage": "https://github.com/liquidx/quickelement"
+  "homepage": "https://github.com/liquidx/quickelement",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "babel-minify": "^0.5.1",
+    "babel-preset-minify": "^0.5.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "core-js": "^3.6.5"
+  }
 }

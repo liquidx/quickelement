@@ -1,6 +1,6 @@
 # QuickElement
 
-Simple way to create basic HTML elements with no other dependencies.
+Simple way to create basic HTML elements with no dependencies.
 
 ## Install
 
