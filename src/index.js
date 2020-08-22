@@ -1,15 +1,18 @@
+const isDictionary = (v) => { return v.constructor == Object }
+
 export const el = (tag, klass, attributes, contents) => {
   const element = document.createElement(tag);
   if (attributes && attributes.className) {
     element.classList.add(attributes.className);
   }
-  if (klass && typeof klass == "string") {
+  if (klass && typeof klass === "string") {
     element.classList.add(klass);
   }
-  if (klass && typeof klass == "object" && klass.length > 0) {
+  if (klass && Array.isArray(klass)) {
     element.classList.add(...klass);
   }
-  if (attributes) {
+
+  if (attributes && isDictionary(attributes)) {
     for (let attrKey of Object.keys(attributes)) {
       if (attrKey == "className") {
         continue;
@@ -17,6 +20,11 @@ export const el = (tag, klass, attributes, contents) => {
       element.setAttribute(attrKey, attributes[attrKey]);
     }
   }
+
+  if (attributes && (Array.isArray(attributes) || typeof attributes == 'string')) {
+    contents = attributes  // treat attributes as contents.
+  }
+
   if (!!contents) {
     if (typeof contents == "string") {
       let textNode = document.createElement("span");
