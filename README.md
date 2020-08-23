@@ -19,8 +19,15 @@ let link = el("a", "my-class", {href: "http://example.com/"}, [
 ])
 
 document.body.appendChild(link)
-
 ```
+
+This produces the following HTML
+```
+<a class="my-class" href="http://example.com"><img src="image.jpg"></a>
+```
+
+
+##  Examples
 
 Or even quicker:
 
@@ -31,6 +38,11 @@ let clock = div('clock', {id: 'nyc'}, [
   div('hours', {}, '23'),
   div('minutes', {}, '36')
 ])
+
+<div class="clock" id="nyc">
+  <div class="hours">23</div>
+  <div class="minutes">36</div>
+</div>
 ```
 
 Multiple classes can be done like this:
@@ -42,6 +54,11 @@ let clock = div('clock', {id: 'nyc'}, [
   div(['hours', 'timeunit'], {}, '23'),
   div(['minutes', 'timeunit'], {}, '36')
 ])
+
+<div class="clock" id="nyc">
+  <div class="hours timeunit">23</div>
+  <div class="minutes timeunit">36</div>
+</div>
 ```
 
 Attributes are optional:
@@ -53,4 +70,9 @@ let clock = div('clock', {id: 'nyc'}, [
   div(['hours', 'timeunit'], '23'),
   div(['minutes', 'timeunit'], '36')
 ])
+
+<div class="clock" id="nyc">
+  <div class="hours timeunit">23</div>
+  <div class="minutes timeunit">36</div>
+</div>
 ```
