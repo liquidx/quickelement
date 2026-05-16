@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quickelement example</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        max-width: 640px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      h1 { font-size: 1.4rem; margin-bottom: 1.5rem; }
+      #output { display: flex; flex-direction: column; gap: 0.5rem; }
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 0.75rem 1rem;
+      }
+      .tag {
+        display: inline-block;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #fff;
+        background: #555;
+        margin-right: 0.4rem;
+      }
+      .tag.red { background: #c0392b; }
+      .tag.blue { background: #2980b9; }
+      .tag.green { background: #27ae60; }
+      table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+      td { border: 1px solid #ddd; padding: 0.5rem 0.75rem; }
+      tr:nth-child(even) td { background: #f9f9f9; }
+    </style>
+  </head>
+  <body>
+    <h1>quickelement example</h1>
+    <div id="output"></div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
